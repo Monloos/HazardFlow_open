@@ -1,6 +1,6 @@
 # HazardFlow
 Code Implementation of *HazardFlow: Score-based Energy Modeling for Health Risk Prediction*. 
-This repository includes implementations of HazardFlow with multiple health risk prediction backbones, including **GRASP**, **ConCare**, **DDL-CXR**, and **MedFuse**. Other uni-modal backbones follow a similar implementation pipeline to GRASP and ConCare.
+This repository includes implementations of HazardFlow with multiple health risk prediction backbones, including **GRASP**, **ConCare**, **DDL-CXR**, **MedFuse**, and **DrFuse**. Other uni-modal backbones follow a similar implementation pipeline to GRASP and ConCare.
 
 Our implementation of score-based generative modeling is primarily built upon the tutorial code provided in https://github.com/jmtomczak/intro_dgm/blob/main/sbgms/sbgm_example.ipynb.
 
@@ -57,7 +57,7 @@ The Python commands follow the original implementation pipeline.
 ## MedFuse
 Our implementation is built upon the original MedFuse codebase, and the environment setup follows the instructions provided in: https://github.com/nyuad-cai/medfuse.
 
-To integrate HazardFlow with DDL-CXR, please replace
+To integrate HazardFlow with MedFuse, please replace
 ```
 MedFuse/models/fusion.py
 ```
@@ -72,4 +72,33 @@ MedFuse/models/fusion_trainer.py
 with our version located at
 ```
 MedFuse/fusion_trainer.py
+```
+
+
+## DrFuse
+Our implementation is built upon the original DrFuse codebase, and the environment setup follows the instructions provided in: https://github.com/dorothy-yao/drfuse.
+
+To integrate HazardFlow with DrFuse (we here provide the plug-and-play generalization version), please replace
+```
+DrFuse/main.py
+```
+with our version located at
+```
+DrFuse/main_twostage.py
+```
+replace
+```
+DrFuse/models/drfuse.py
+```
+with our version located at
+```
+DrFuse/drfuse.py
+```
+and replace
+```
+DrFuse/models/drfuse_trainer.py
+```
+with our version located at
+```
+DrFuse/drfuse_trainer.py
 ```
