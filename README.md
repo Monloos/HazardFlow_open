@@ -1,6 +1,6 @@
 # HazardFlow
 Code Implementation of *HazardFlow: Score-based Energy Modeling for Health Risk Prediction*. 
-This repository includes implementations of HazardFlow with multiple health risk prediction backbones, including **GRASP**, **ConCare**, **DDL-CXR**, **MedFuse**, and **DrFuse**. Other uni-modal backbones follow a similar implementation pipeline to GRASP and ConCare.
+This repository includes implementations of HazardFlow with multiple health risk prediction backbones, including **GRASP**, **ConCare**, **DDL-CXR**, **MedFuse**, and **DrFuse**. Other uni-modal backbones follow the same implementation pipeline to GRASP and ConCare.
 
 Our implementation of score-based generative modeling is primarily built upon the tutorial code provided in https://github.com/jmtomczak/intro_dgm/blob/main/sbgms/sbgm_example.ipynb.
 
